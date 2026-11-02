@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bravo Launcher — tap the back of your phone to launch anything</title>
+<meta name="description" content="Bravo Launcher is a fast, customizable Android launcher with back-tap and side-tap gestures, deep home screen customization, and zero tracking — everything stays on your phone or tablet. Available in 19 languages.">
+<meta name="theme-color" content="#060a13" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f3f5fa" media="(prefers-color-scheme: light)">
+<link rel="canonical" href="https://bravolauncher.github.io/website/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bravo Launcher">
+<meta property="og:title" content="Bravo Launcher — tap the back. Tap the side. Tap the screen.">
+<meta property="og:description" content="A fast, private, deeply customizable Android launcher with back-tap and side-tap gestures. No ads, no account, no tracking.">
+<meta property="og:url" content="https://bravolauncher.github.io/website/">
+<meta property="og:image" content="https://bravolauncher.github.io/website/img/og-image.jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='14 14 80 80'%3E%3Cpath fill='%231A73E8' d='M54,14C22,14,14,22,14,54C14,86,22,94,54,94C86,94,94,86,94,54C94,22,86,14,54,14Z'/%3E%3Cpath fill='%23fff' d='M40,34h10c3.3,0 6,0.7 8,2.1c2,1.4 3,3.4 3,6c0,1.8 -0.5,3.3 -1.5,4.4c-1,1.1 -2.3,1.9 -3.9,2.3v0.2c2,0.3 3.6,1.2 4.8,2.5c1.2,1.4 1.8,3.1 1.8,5.2c0,2.9 -1.1,5.2 -3.2,6.8c-2.2,1.6 -5.1,2.4 -8.8,2.4H40V34zM46.5,47.5h4.2c1.9,0 3.3,-0.4 4.3,-1.2c1,-0.8 1.5,-2 1.5,-3.5c0,-1.4 -0.5,-2.4 -1.4,-3.1c-0.9,-0.7 -2.3,-1 -4.2,-1H46.5V47.5zM46.5,52.2v9.5h5c2,0 3.5,-0.5 4.6,-1.4c1.1,-0.9 1.6,-2.3 1.6,-4c0,-1.5 -0.5,-2.7 -1.5,-3.5c-1,-0.8 -2.5,-1.2 -4.5,-1.2H46.5z'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/mona-sans-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}document.documentElement.classList.add("js")</script>
+<script src="site.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg viewBox="14 14 80 80" aria-hidden="true"><path fill="#1A73E8" d="M54,14C22,14,14,22,14,54C14,86,22,94,54,94C86,94,94,86,94,54C94,22,86,14,54,14Z"/><path fill="#fff" d="M40,34h10c3.3,0 6,0.7 8,2.1c2,1.4 3,3.4 3,6c0,1.8 -0.5,3.3 -1.5,4.4c-1,1.1 -2.3,1.9 -3.9,2.3v0.2c2,0.3 3.6,1.2 4.8,2.5c1.2,1.4 1.8,3.1 1.8,5.2c0,2.9 -1.1,5.2 -3.2,6.8c-2.2,1.6 -5.1,2.4 -8.8,2.4H40V34zM46.5,47.5h4.2c1.9,0 3.3,-0.4 4.3,-1.2c1,-0.8 1.5,-2 1.5,-3.5c0,-1.4 -0.5,-2.4 -1.4,-3.1c-0.9,-0.7 -2.3,-1 -4.2,-1H46.5V47.5zM46.5,52.2v9.5h5c2,0 3.5,-0.5 4.6,-1.4c1.1,-0.9 1.6,-2.3 1.6,-4c0,-1.5 -0.5,-2.7 -1.5,-3.5c-1,-0.8 -2.5,-1.2 -4.5,-1.2H46.5z"/></svg>
+      <span>Bravo Launcher</span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#gestures">Gestures</a>
+      <a href="index.html#screenshots">Screenshots</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn theme-toggle" type="button" aria-label="Switch light or dark theme">
+        <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg>
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></svg>
+      </button>
+      <a class="header-cta" href="https://play.google.com/store/apps/details?id=com.ergton.bravolauncher">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.2 2.6c-.4.2-.6.7-.6 1.2v16.4c0 .5.2 1 .6 1.2l9.3-9.4-9.3-9.4zm10.5 8.2L6.9 3l9.8 5.6-2 2.2zm3.1 3.1 2.6-1.5c.8-.5.8-1.6 0-2.1l-2.6-1.5-2.3 2.6 2.3 2.5zM6.9 21l7.8-7.8 2 2.2L6.9 21z"/></svg>
+        Get the app
+      </a>
+      <button class="icon-btn menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ hero ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="eyebrow">Android launcher · phones &amp; tablets</span>
+        <h1 class="display">Tap the <span class="c-back">back</span>.<br>Tap the <span class="c-side">side</span>.<br>Tap the <span class="c-screen">screen</span>.</h1>
+        <p class="lede">Bravo Launcher is a fast, private, deeply customizable Android launcher for phones and tablets. Double- or triple-tap the back of your phone, its edge, or the home screen itself to fire the flashlight, lock the screen, or open any app.</p>
+        <div class="cta-row">
+          <a class="btn-play" href="https://play.google.com/store/apps/details?id=com.ergton.bravolauncher">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.2 2.6c-.4.2-.6.7-.6 1.2v16.4c0 .5.2 1 .6 1.2l9.3-9.4-9.3-9.4zm10.5 8.2L6.9 3l9.8 5.6-2 2.2zm3.1 3.1 2.6-1.5c.8-.5.8-1.6 0-2.1l-2.6-1.5-2.3 2.6 2.3 2.5zM6.9 21l7.8-7.8 2 2.2L6.9 21z"/></svg>
+            Get it on Google Play
+          </a>
+          <a class="btn-ghost" href="#screenshots">
+            See it in action
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+          </a>
+        </div>
+        <ul class="cta-meta">
+          <li>Free 30-day trial</li>
+          <li>One-time unlock</li>
+          <li>No ads · no account · no tracking</li>
+        </ul>
+      </div>
+
+      <div class="stage">
+        <div class="device d-left">
+          <img src="img/shots/organizer-300.webp" srcset="img/shots/organizer-300.webp 1x, img/shots/organizer-600.webp 2x" width="300" height="650" alt="App drawer Organizer grouping apps into tiles by icon color">
+        </div>
+        <div class="device d-right">
+          <img src="img/shots/widgets-folders-300.webp" srcset="img/shots/widgets-folders-300.webp 1x, img/shots/widgets-folders-600.webp 2x" width="300" height="650" alt="Home screen with a stock widget and a large folder of shopping apps">
+        </div>
+        <div class="device d-front">
+          <img src="img/shots/home-300.webp" srcset="img/shots/home-300.webp 1x, img/shots/home-600.webp 2x" width="300" height="650" alt="Bravo Launcher home screen with a weather widget, the Spaces widget, app icons and the dock" fetchpriority="high">
+          <span class="tap t-screen" aria-hidden="true"></span>
+          <span class="tap-label t-screen" aria-hidden="true">screen ×2</span>
+          <span class="tap t-side" aria-hidden="true"></span>
+          <span class="tap-label t-side" aria-hidden="true">side ×3</span>
+          <span class="tap t-back" aria-hidden="true"></span>
+          <span class="tap-label t-back" aria-hidden="true">back ×2</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof" aria-label="At a glance">
+    <div class="wrap">
+      <div><b class="good">0</b><span>trackers</span></div>
+      <div><b class="good">0</b><span>ads</span></div>
+      <div><b class="good">0</b><span>network calls</span></div>
+      <div><b>100%</b><span>on-device</span></div>
+      <div><b>19</b><span>languages</span></div>
+    </div>
+  </section>
+
+  <!-- ============ gestures ============ -->
+  <section class="section" id="gestures">
+    <div class="wrap">
+      <div class="gesture-layout">
+        <div>
+          <div class="section-head" data-reveal>
+            <span class="eyebrow">Gestures</span>
+            <h2 class="display">Every surface is a button</h2>
+            <p>Back and side taps are read from the accelerometer — not the microphone, not the camera — with filtering tuned on real-world recordings to tell deliberate taps from bumps, drops and table knocks. Every fired tap confirms itself: a short buzz, and for toggles you can't see — auto-rotate, sound, flashlight, mute — a small pill at the top of the screen tells you which state you landed in. Screen taps and gestures come on top.</p>
+          </div>
+          <div class="gesture-list">
+            <div class="gesture-card" data-reveal>
+              <span class="ring" aria-hidden="true">01</span>
+              <div>
+                <h3>Back tap — double &amp; triple</h3>
+                <p>Tap twice or three times on the back cover. Works with a case, works while other apps are open, with self-tuning sensitivity and false-positive filtering.</p>
+              </div>
+            </div>
+            <div class="gesture-card side" data-reveal>
+              <span class="ring" aria-hidden="true">02</span>
+              <div>
+                <h3>Side tap — double &amp; triple</h3>
+                <p>Tap the edge of the phone instead — easier one-handed, and completely separate from the back gesture, so you get four extra shortcuts in total.</p>
+              </div>
+            </div>
+            <div class="gesture-card screen" data-reveal>
+              <span class="ring" aria-hidden="true">03</span>
+              <div>
+                <h3>Screen taps &amp; gestures</h3>
+                <p>Double- or triple-tap empty space on the home screen — or go further with swipes, pinches, two-finger gestures and long-press. Fourteen remappable slots in all.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gesture-media" data-reveal>
+          <div class="device">
+            <img src="img/shots/gestures-300.webp" srcset="img/shots/gestures-300.webp 1x, img/shots/gestures-600.webp 2x" width="300" height="650" loading="lazy" alt="Gestures settings: back double tap launches an app, back triple tap toggles the flashlight, side taps toggle auto-rotate and sound">
+          </div>
+        </div>
+      </div>
+
+      <p class="chips-label">Assign any action to any tap</p>
+      <div class="chip-row">
+        <span class="chip on">toggle flashlight</span>
+        <span class="chip">lock screen</span>
+        <span class="chip">expand notifications</span>
+        <span class="chip">open any app</span>
+        <span class="chip">launch search</span>
+        <span class="chip">recent apps</span>
+        <span class="chip">mute / unmute media</span>
+        <span class="chip">ring / vibrate</span>
+        <span class="chip">auto-rotate</span>
+        <span class="chip">show hidden apps</span>
+        <span class="chip">…and more</span>
+      </div>
+
+      <div class="gesture-note" id="tap-notes" data-reveal>
+        <h3>How to tap &amp; what to expect</h3>
+        <div>
+          <p>Tap with your fingertip — crisp, short taps with the same finger at even strength. It takes a little getting used to; once you find the rhythm, taps should work reliably in everyday use. It isn't perfect: an occasional missed tap or false trigger can happen.</p>
+          <p>Want to help improve detection? Turn on <strong>Settings&nbsp;→&nbsp;Debug&nbsp;→&nbsp;Tap trace logging</strong> in the app, reproduce the problem, export the capture and attach it to an issue on <a href="https://github.com/BravoLauncher/BravoLauncher">github.com/BravoLauncher/BravoLauncher</a>. Traces contain motion-sensor data and basic device details only — no personal information.</p>
+        </div>
+        <div>
+          <p><strong>Not every phone is compatible.</strong> Back and side taps depend on the phone's motion sensor and on how its vibration motor behaves, and both vary by model. On some phones the feature may not work at all, and on others the launcher automatically turns off parts of the tap functionality — for example the confirmation vibration, or one of the double/triple variants — to keep detection reliable on that hardware.</p>
+          <p><strong>Tablets:</strong> tap detection is tuned on phones; on a tablet taps usually need to be firmer, and back taps are not detected while the tablet lies flat or sits in a stand. Everything else in the launcher works the same regardless.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ features ============ -->
+  <section class="section band" id="features">
+    <div class="wrap">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow">Features</span>
+        <h2 class="display">Everything a launcher should be</h2>
+        <p>Fast, Material You native, and customizable down to the pixel — without ever phoning home.</p>
+      </div>
+
+      <article class="show" data-reveal>
+        <div class="show-media">
+          <div class="device back">
+            <img src="img/shots/home-300.webp" srcset="img/shots/home-300.webp 1x, img/shots/home-600.webp 2x" width="300" height="650" loading="lazy" alt="">
+          </div>
+          <div class="device front">
+            <img src="img/shots/spaces-300.webp" srcset="img/shots/spaces-300.webp 1x, img/shots/spaces-600.webp 2x" width="300" height="650" loading="lazy" alt="Spaces screen listing three spaces: Main with admin space, Games restricted, and Guest with full access">
+          </div>
+        </div>
+        <div class="show-copy">
+          <span class="num">01 / spaces</span>
+          <h3>More than one home screen</h3>
+          <p>Keep several complete home screens on one phone as spaces, and switch between them from the long-press menu, a gesture or the Spaces widget. Each space has its own layout, look, wallpaper photo and its own set of displayed apps.</p>
+          <ul class="ticks">
+            <li>A space can be limited to what this launcher offers: no launcher settings, no home editing, only the apps you choose shown in its drawer, search, home screen, dock and folders, and a screen-lock check before anyone switches away.</li>
+            <li>Themes and copied layouts follow the same list, so a space never shows an app you left out.</li>
+            <li>A guest space resets itself when you leave.</li>
+          </ul>
+          <p class="aside">Spaces only change what this launcher shows: apps that are not shown still appear in notifications and in Android’s own app list.</p>
+        </div>
+      </article>
+
+      <article class="show flip" data-reveal>
+        <div class="show-media">
+          <div class="device solo">
+            <img src="img/shots/organizer-300.webp" srcset="img/shots/organizer-300.webp 1x, img/shots/organizer-600.webp 2x" width="300" height="650" loading="lazy" alt="App drawer Organizer with tiles grouped by icon color: red, orange, yellow, green, teal and blue">
+          </div>
+        </div>
+        <div class="show-copy">
+          <span class="num">02 / organizer</span>
+          <h3>A drawer that sorts itself</h3>
+          <p>Switch on the Organizer and the All Apps list becomes App Library style tiles: your apps grouped into folders by category — social, games, tools, finance and so on — or by the color of their icons. Inside each tile the apps you use most come first.</p>
+          <ul class="ticks">
+            <li>Categories are worked out on the phone from the app itself, with no network and no lookup service; if one lands in the wrong group, long-press it and move it, and your choice sticks.</li>
+            <li>Compact or detailed group names, ranking by usage, recent or name, and the same folder look you set for the home screen.</li>
+            <li>Prefer a classic drawer? It slides up under your finger one-to-one, in grid, list or card layout, with optional group tabs, alphabet fast-scroll and sorting by name, frequency or most recent.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="show" data-reveal>
+        <div class="show-media">
+          <div class="device solo">
+            <img src="img/shots/widgets-folders-300.webp" srcset="img/shots/widgets-folders-300.webp 1x, img/shots/widgets-folders-600.webp 2x" width="300" height="650" loading="lazy" alt="Home screen with a stock-market widget and a 3×3 large folder showing shopping apps at full size">
+          </div>
+        </div>
+        <div class="show-copy">
+          <span class="num">03 / folders</span>
+          <h3>Large folders, right on the home screen</h3>
+          <p>Any folder can grow to a 2×2, 3×2, 2×3 or 3×3 block that shows its apps at full size, lined up with the icons around it — one tap launches them, no folder to open first.</p>
+          <ul class="ticks">
+            <li>The last spot is always the folder itself: tap it to open the whole folder, long-press it for rename, resize and remove, drag it to move the block.</li>
+            <li>Want more apps in the same space? Pick a denser grid inside, like nine smaller icons in a 2×2 block — the launcher only offers the grids that fit your screen well.</li>
+            <li>Resizing shows the change live behind a small card, so you can try block and grid together and tap Done or Cancel.</li>
+            <li>Drop an app onto the exact spot you want it, drag apps around inside the block to rearrange them, and drag one out to put it anywhere else; a folder stays a folder even with one app left.</li>
+          </ul>
+          <p class="aside">Small folders keep grid, stack, fan or cover previews, and every folder opens as a popup or as a card centered over the blurred home screen, in one color and opacity you choose.</p>
+        </div>
+      </article>
+
+      <article class="show flip" data-reveal>
+        <div class="show-media">
+          <div class="device solo">
+            <img src="img/shots/preview-300.webp" srcset="img/shots/preview-300.webp 1x, img/shots/preview-600.webp 2x" width="300" height="650" loading="lazy" alt="Home Screen settings with icon size, rows and icons per row, each with an eye icon for live preview">
+          </div>
+        </div>
+        <div class="show-copy">
+          <span class="num">04 / preview</span>
+          <h3>See it before you keep it</h3>
+          <p>Hold any switch, slider or option in Settings and the settings page fades away so the real home screen shows the change live under your finger. Release to keep it, or slide back to where you were.</p>
+          <ul class="ticks">
+            <li>Options that can be previewed carry a small eye icon.</li>
+            <li>Adjust, hold, adjust again — until it looks right.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="show" data-reveal>
+        <div class="show-media">
+          <div class="device back">
+            <img src="img/shots/themes-300.webp" srcset="img/shots/themes-300.webp 1x, img/shots/themes-600.webp 2x" width="300" height="650" loading="lazy" alt="">
+          </div>
+          <div class="device front">
+            <img src="img/shots/monochrome-300.webp" srcset="img/shots/monochrome-300.webp 1x, img/shots/monochrome-600.webp 2x" width="300" height="650" loading="lazy" alt="Home screen with monochrome themed icons over a sunset wallpaper">
+          </div>
+        </div>
+        <div class="show-copy">
+          <span class="num">05 / looks</span>
+          <h3>Themes you can share</h3>
+          <p>Export your whole look — grid, dock, drawer, icon style and where every icon, folder and widget sits — as a small file, send it to a friend, and import theirs.</p>
+          <ul class="ticks">
+            <li>Preview any theme live on your own home screen with Keep and Revert, let missing apps be filled with the same kind of app you already have, and bring widgets across when your phone has them.</li>
+            <li>Nothing is downloaded: a theme only arrives as a file you open.</li>
+            <li>On a fresh install the home screen asks which starting look you want — including a Classic look with familiar stock-sized icons.</li>
+            <li><strong>Material You, everywhere:</strong> dynamic colors from your wallpaper (Android 12+), monochrome themed icons, icon packs, custom icon shapes, per-app icons and labels, and a dark theme that follows your phone or stays on or off.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="show flip" data-reveal>
+        <div class="show-media tablet-media">
+          <div class="tablet portrait">
+            <img src="img/shots/tablet-home-300.webp" srcset="img/shots/tablet-home-300.webp 1x, img/shots/tablet-home-600.webp 2x" width="300" height="480" loading="lazy" alt="Tablet home screen with widgets, a large folder and the dock">
+          </div>
+          <div class="tablet landscape">
+            <img src="img/shots/tablet-drawer-settings-400.webp" srcset="img/shots/tablet-drawer-settings-400.webp 1x, img/shots/tablet-drawer-settings-800.webp 2x" width="400" height="250" loading="lazy" alt="Tablet settings shown as a list on the left and the App Drawer options on the right">
+          </div>
+        </div>
+        <div class="show-copy">
+          <span class="num">06 / tablets</span>
+          <h3>Made for the big screen too</h3>
+          <p>On tablets the launcher rotates freely, starts with a roomier grid, centers the dock and shows settings as a list-and-detail pair.</p>
+          <ul class="ticks">
+            <li>A six-by-five grid that fills the screen, with widgets and icons side by side.</li>
+            <li>Large folders open their apps right on the page.</li>
+            <li>Settings on the left, options on the right — no going back and forth.</li>
+          </ul>
+        </div>
+      </article>
+
+      <div class="bento">
+        <div class="tile wide" data-reveal>
+          <span class="glyph">home</span>
+          <h3>Your grid, your rules</h3>
+          <p>Custom rows and columns, page effects, infinite scroll, auto-arrange, icon labels, padding — arranged exactly how you want it. Icons shrink to fit tight grids instead of clipping their labels. Long-press an icon and a compact menu opens beside it, with the app's own shortcuts. In the screen editor you long-press a screen to drag it into a new order.</p>
+          <div class="peek"><div class="device"><img src="img/shots/editor-300.webp" srcset="img/shots/editor-300.webp 1x, img/shots/editor-600.webp 2x" width="300" height="650" loading="lazy" alt="Edit home screen mode showing three screens to reorder, with Wallpaper, Widgets, Spaces and Settings buttons"></div></div>
+        </div>
+        <div class="tile wide" data-reveal>
+          <span class="glyph">search</span>
+          <h3>Search anything, ask anyone</h3>
+          <p>Find any app instantly, type math straight into the search bar, or hand your query to your browser — Google, DuckDuckGo, Bing, or AI search with ChatGPT, Claude, Gemini and Perplexity.</p>
+          <div class="peek"><div class="device"><img src="img/shots/search-300.webp" srcset="img/shots/search-300.webp 1x, img/shots/search-600.webp 2x" width="300" height="650" loading="lazy" alt="Search screen offering to search the web with Google, DuckDuckGo, Claude, Gemini or Perplexity"></div></div>
+        </div>
+        <div class="tile wide" data-reveal>
+          <span class="glyph">backups</span>
+          <h3>Backups that happen by themselves</h3>
+          <p>Every time you finish a round of changes, the launcher quietly writes a full backup a moment later. Keep the last 5 to 50, or switch it off; every entry has its own Restore button. Backups are plain files — keep them in the app, or pick a folder and let your own sync app carry them. Coming from another launcher? Restore from a file also reads the backup file your previous launcher wrote.</p>
+          <div class="peek"><div class="device"><img src="img/shots/backups-300.webp" srcset="img/shots/backups-300.webp 1x, img/shots/backups-600.webp 2x" width="300" height="650" loading="lazy" alt="Backup and Restore screen with automatic backups, each with its own Restore button"></div></div>
+        </div>
+        <div class="tile wide" data-reveal>
+          <span class="glyph">settings</span>
+          <h3>Every option, one search away</h3>
+          <p>Settings are grouped in plain sections — home screen, drawer, dock, folders, gestures, appearance, wallpaper — and settings search jumps you straight to any option, in your language.</p>
+          <div class="peek"><div class="device"><img src="img/shots/settings-300.webp" srcset="img/shots/settings-300.webp 1x, img/shots/settings-600.webp 2x" width="300" height="650" loading="lazy" alt="Settings list with a search field and sections for permissions, home screen, app drawer, dock, folders, gestures, appearance, wallpaper and search"></div></div>
+        </div>
+        <div class="tile" data-reveal>
+          <span class="glyph">dock</span>
+          <h3>Dock your way — or no dock at all</h3>
+          <p>A swipeable multi-page dock with a bar, floating or glass background, automatic height and a color of your choice — or switch the dock off and give the whole screen to your grid.</p>
+        </div>
+        <div class="tile" data-reveal>
+          <span class="glyph">badges</span>
+          <h3>Notification badges</h3>
+          <p>Dots or counters, positioned and colored your way, with a live preview on your own apps while you set them up — reading only the number of notifications, never their content.</p>
+        </div>
+        <div class="tile" data-reveal>
+          <span class="glyph">privacy</span>
+          <h3>Hidden apps</h3>
+          <p>Hide the apps you do not want in your drawer or search results, and bring them back whenever you like.</p>
+        </div>
+        <div class="tile span4" data-reveal>
+          <span class="glyph">widgets &amp; work profile</span>
+          <h3>Widgets at their real size</h3>
+          <p>Full widget support with resizing, and a widget picker that shows each widget as it will really look, at its real shape. Where an app offers several sizes, swipe through them and add the one you see — or long-press a widget and drag it straight onto any home screen. The launcher's own Search bar widget can be placed and resized anywhere too. Work-profile apps get their badge.</p>
+        </div>
+        <div class="tile" data-reveal>
+          <span class="glyph">drag &amp; drop</span>
+          <h3>Drag apps anywhere</h3>
+          <p>Drag any app straight out of the drawer or the search results onto a home screen, into the dock or into a folder.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ screenshots ============ -->
+  <section class="section" id="screenshots">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Screenshots</span>
+        <h2 class="display">A closer look</h2>
+        <p>The same images you'll find on Google Play. Tap any of them to view it full size.</p>
+      </div>
+      <div class="gallery-controls">
+        <button class="icon-btn g-prev" type="button" aria-label="Previous screenshots"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button class="icon-btn g-next" type="button" aria-label="Next screenshots"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+    <div class="gallery-shell">
+      <ul class="gallery" aria-label="Screenshots">
+        <li><button class="shot" type="button"><img src="img/play/spaces-270.webp" srcset="img/play/spaces-270.webp 1x, img/play/spaces-540.webp 2x" data-full="img/play/spaces-900.webp" width="270" height="480" loading="lazy" alt="One phone, several home screens — Spaces for work, games, guests and more"></button></li>
+        <li><button class="shot" type="button"><img src="img/play/organizer-270.webp" srcset="img/play/organizer-270.webp 1x, img/play/organizer-540.webp 2x" data-full="img/play/organizer-900.webp" width="270" height="480" loading="lazy" alt="A drawer that organises itself — apps grouped by category or by icon colour"></button></li>
+        <li><button class="shot" type="button"><img src="img/play/gestures-270.webp" srcset="img/play/gestures-270.webp 1x, img/play/gestures-540.webp 2x" data-full="img/play/gestures-900.webp" width="270" height="480" loading="lazy" alt="Tap the back or the side of your phone — any action: flashlight, lock screen, an app"></button></li>
+        <li><button class="shot" type="button"><img src="img/play/widgets-folders-270.webp" srcset="img/play/widgets-folders-270.webp 1x, img/play/widgets-folders-540.webp 2x" data-full="img/play/widgets-folders-900.webp" width="270" height="480" loading="lazy" alt="Widgets and large folders — open apps straight from the folder"></button></li>
+        <li><button class="shot" type="button"><img src="img/play/preview-270.webp" srcset="img/play/preview-270.webp 1x, img/play/preview-540.webp 2x" data-full="img/play/preview-900.webp" width="270" height="480" loading="lazy" alt="See every change before you commit — hold an option with the eye icon to preview it live"></button></li>
+        <li><button class="shot" type="button"><img src="img/play/reorder-270.webp" srcset="img/play/reorder-270.webp 1x, img/play/reorder-540.webp 2x" data-full="img/play/reorder-900.webp" width="270" height="480" loading="lazy" alt="Rearrange the home screens — hold a screen and drag to reorder"></button></li>
+        <li><button class="shot" type="button"><img src="img/play/wallpapers-270.webp" srcset="img/play/wallpapers-270.webp 1x, img/play/wallpapers-540.webp 2x" data-full="img/play/wallpapers-900.webp" width="270" height="480" loading="lazy" alt="Wallpapers and looks — ready-made colour wallpapers, themes and sharing"></button></li>
+        <li><button class="shot" type="button"><img src="img/play/monochrome-270.webp" srcset="img/play/monochrome-270.webp 1x, img/play/monochrome-540.webp 2x" data-full="img/play/monochrome-900.webp" width="270" height="480" loading="lazy" alt="One colour, every icon — monochrome icons from your wallpaper or any colour you like"></button></li>
+        <li><button class="shot" type="button" style="--ar: 16 / 10"><img src="img/play/tablet-740.webp" srcset="img/play/tablet-740.webp 1x, img/play/tablet-1200.webp 2x" data-full="img/play/tablet-1600.webp" width="740" height="463" loading="lazy" alt="Room to spread out — a six-by-five tablet grid with large folders and widgets"></button></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ languages ============ -->
+  <section class="section band" id="languages">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Languages</span>
+        <h2 class="display">Speaks your language</h2>
+        <p>Bravo Launcher is fully translated into 19 languages — every setting, every gesture, even settings search works in your language. Arabic gets proper right-to-left layout, and on Android 13+ you can give Bravo its own language, separate from the rest of your phone.</p>
+      </div>
+      <div class="chip-row" data-reveal>
+        <span class="chip" lang="en">English</span>
+        <span class="chip" lang="de">Deutsch</span>
+        <span class="chip" lang="fr">Français</span>
+        <span class="chip" lang="es">Español</span>
+        <span class="chip" lang="it">Italiano</span>
+        <span class="chip" lang="pt">Português</span>
+        <span class="chip" lang="nl">Nederlands</span>
+        <span class="chip" lang="pl">Polski</span>
+        <span class="chip" lang="cs">Čeština</span>
+        <span class="chip" lang="hu">Magyar</span>
+        <span class="chip" lang="ro">Română</span>
+        <span class="chip" lang="el">Ελληνικά</span>
+        <span class="chip" lang="tr">Türkçe</span>
+        <span class="chip" lang="uk">Українська</span>
+        <span class="chip" lang="ar" dir="rtl">العربية</span>
+        <span class="chip" lang="hi">हिन्दी</span>
+        <span class="chip" lang="zh-Hans">中文（简体）</span>
+        <span class="chip" lang="vi">Tiếng Việt</span>
+        <span class="chip" lang="id">Bahasa Indonesia</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ pricing ============ -->
+  <section class="section" id="pricing">
+    <div class="wrap">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow">Pricing</span>
+        <h2 class="display">Free to try. Unlock once.</h2>
+        <p>The full version is free to try for 30 days. After that, the premium features need a one-time unlock. There are no ads and no subscription, with or without the unlock.</p>
+      </div>
+      <div class="price-grid">
+        <div class="price-card" data-reveal>
+          <span class="tag">Always free</span>
+          <h3>The core launcher</h3>
+          <p>Without the unlock, the core features stay free — and your home screen keeps its layout and look.</p>
+          <ul class="ticks">
+            <li>Home screen</li>
+            <li>App drawer</li>
+            <li>Dock</li>
+            <li>Folders</li>
+            <li>Widgets</li>
+            <li>Search</li>
+            <li>Notification badges</li>
+          </ul>
+        </div>
+        <div class="price-card hi" data-reveal>
+          <span class="tag">30-day trial, then a one-time unlock</span>
+          <h3>The full version</h3>
+          <p>Everything in the core launcher, plus the premium features:</p>
+          <ul class="ticks">
+            <li>Back, side, double &amp; triple tap gestures</li>
+            <li>Spaces</li>
+            <li>App drawer Organizer</li>
+            <li>Large folders</li>
+            <li>Themes</li>
+            <li>Backup, restore &amp; automatic backups</li>
+            <li>Icon packs, shapes &amp; monochrome icons</li>
+            <li>Icon sizes, labels &amp; label pills</li>
+            <li>Folder colors</li>
+            <li>Auto-arrange, lock desktop, scrollable wallpaper &amp; infinite scroll</li>
+          </ul>
+          <div class="price-foot">
+            <a class="btn-play" href="https://play.google.com/store/apps/details?id=com.ergton.bravolauncher">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.2 2.6c-.4.2-.6.7-.6 1.2v16.4c0 .5.2 1 .6 1.2l9.3-9.4-9.3-9.4zm10.5 8.2L6.9 3l9.8 5.6-2 2.2zm3.1 3.1 2.6-1.5c.8-.5.8-1.6 0-2.1l-2.6-1.5-2.3 2.6 2.3 2.5zM6.9 21l7.8-7.8 2 2.2L6.9 21z"/></svg>
+              Start the free trial
+            </a>
+            <span>No subscription · price shown on Google Play</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ privacy ============ -->
+  <section class="section" id="privacy-first">
+    <div class="wrap">
+      <div class="privacy-banner" data-reveal>
+        <div>
+          <h2 class="display">Your home screen is <em>nobody's business</em></h2>
+          <p>Bravo Launcher contains no analytics, no ad SDKs and no crash reporters. It makes no network connections — your app list, usage patterns and settings never leave your device. It started as a launcher the developer built for their own privacy, and it ships exactly that way.</p>
+          <div class="links">
+            <a href="privacy.html">Read the privacy policy →</a>
+          </div>
+        </div>
+        <ul class="check-list">
+          <li>No data collected, ever</li>
+          <li>No account, no sign-in</li>
+          <li>Every sensitive permission is optional</li>
+          <li>Notification access reads counts only</li>
+          <li>Accessibility service (AccessibilityService API) is for gestures only, asks for your consent and can't see your screen</li>
+          <li>Backups stay in your hands</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow">FAQ</span>
+        <h2 class="display">Good to know</h2>
+      </div>
+      <div class="faq" data-reveal>
+        <details>
+          <summary>Is Bravo Launcher free?</summary>
+          <div class="answer">
+            <p>The full version is free to try for 30 days. After that, the premium features need a one-time unlock — there is no subscription. Without the unlock, the core features stay free: home screen, drawer, dock, folders, widgets, search and badges, and the home screen keeps its layout and look. There are no ads either way. <a href="#pricing">See what's included</a>.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Will back tap and side tap work on my phone?</summary>
+          <div class="answer">
+            <p>Back and side taps depend on the phone's motion sensor and on how its vibration motor behaves, and both vary by model. On some phones the feature may not work at all, and on others the launcher automatically turns off parts of the tap functionality to keep detection reliable on that hardware. Everything else in the launcher works the same regardless.</p>
+            <p>The 30-day trial is a good way to find out on your own phone. <a href="#tap-notes">How to tap &amp; what to expect</a>.</p>
+          </div>
+        </details>
+        <details>
+          <summary>My phone switched from gesture navigation to buttons. Why?</summary>
+          <div class="answer">
+            <p>On some phones the system turns off gesture navigation while a launcher other than the built-in one is the default. That is a limit of the phone, not something a launcher can change.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Does Bravo Launcher collect any data?</summary>
+          <div class="answer">
+            <p>No. It contains no analytics, no ad libraries and no crash reporters, and it makes no network connections. Apps, usage and settings stay on the device.</p>
+            <p>One note: when the phone's Android "Usage &amp; diagnostics" setting is on, Android and Google Play send crash reports for this launcher too, to Google, as they do for any app; the developer only sees them as anonymized crash data in the Play Console. <a href="privacy.html">Read the privacy policy</a>.</p>
+          </div>
+        </details>
+        <details>
+          <summary>What is the Accessibility service used for?</summary>
+          <div class="answer">
+            <p>It is optional. Android's AccessibilityService API is used only for the lock screen, recent apps and notification actions you assign to taps and gestures. It cannot read the screen or what is typed, and the launcher asks for your consent before you turn it on.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Where do I report a problem or ask for a feature?</summary>
+          <div class="answer">
+            <p>Open an issue on <a href="https://github.com/BravoLauncher/BravoLauncher">github.com/BravoLauncher/BravoLauncher</a> — for tap problems, attach a tap trace export (Settings → Debug → Tap trace logging). Questions about the privacy policy and security reports go to <a href="mailto:bravolauncher@ergton.com">bravolauncher@ergton.com</a>.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ outlook ============ -->
+  <section class="section outlook" id="outlook">
+    <div class="wrap">
+      <div class="outlook-inner" data-reveal>
+        <span class="eyebrow">Built to last</span>
+        <p>Bravo Launcher is in active development. And it has an end-of-life plan: if the day ever comes when we can no longer maintain it, our intention is to release the source code so the community can carry it forward. <strong>Bravo Launcher was built to outlast us.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" aria-label="Get Bravo Launcher">
+    <div class="closer" data-reveal>
+      <div class="closer-copy">
+        <h2 class="display">Make your home screen yours.</h2>
+        <p>Try every feature free for 30 days. No account, no ads, nothing leaves your phone.</p>
+        <a class="btn-play" href="https://play.google.com/store/apps/details?id=com.ergton.bravolauncher">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.2 2.6c-.4.2-.6.7-.6 1.2v16.4c0 .5.2 1 .6 1.2l9.3-9.4-9.3-9.4zm10.5 8.2L6.9 3l9.8 5.6-2 2.2zm3.1 3.1 2.6-1.5c.8-.5.8-1.6 0-2.1l-2.6-1.5-2.3 2.6 2.3 2.5zM6.9 21l7.8-7.8 2 2.2L6.9 21z"/></svg>
+          Get it on Google Play
+        </a>
+      </div>
+      <div class="closer-media" aria-hidden="true">
+        <div class="device"><img src="img/shots/home-300.webp" srcset="img/shots/home-300.webp 1x, img/shots/home-600.webp 2x" width="300" height="650" loading="lazy" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<dialog class="lightbox" aria-label="Screenshot viewer">
+  <figure>
+    <img alt="">
+  </figure>
+  <figcaption></figcaption>
+  <button class="icon-btn lb-close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <button class="icon-btn lb-prev" type="button" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <button class="icon-btn lb-next" type="button" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+</dialog>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="foot-brand" href="index.html">
+      <svg viewBox="14 14 80 80" aria-hidden="true"><path fill="#1A73E8" d="M54,14C22,14,14,22,14,54C14,86,22,94,54,94C86,94,94,86,94,54C94,22,86,14,54,14Z"/><path fill="#fff" d="M40,34h10c3.3,0 6,0.7 8,2.1c2,1.4 3,3.4 3,6c0,1.8 -0.5,3.3 -1.5,4.4c-1,1.1 -2.3,1.9 -3.9,2.3v0.2c2,0.3 3.6,1.2 4.8,2.5c1.2,1.4 1.8,3.1 1.8,5.2c0,2.9 -1.1,5.2 -3.2,6.8c-2.2,1.6 -5.1,2.4 -8.8,2.4H40V34zM46.5,47.5h4.2c1.9,0 3.3,-0.4 4.3,-1.2c1,-0.8 1.5,-2 1.5,-3.5c0,-1.4 -0.5,-2.4 -1.4,-3.1c-0.9,-0.7 -2.3,-1 -4.2,-1H46.5V47.5zM46.5,52.2v9.5h5c2,0 3.5,-0.5 4.6,-1.4c1.1,-0.9 1.6,-2.3 1.6,-4c0,-1.5 -0.5,-2.7 -1.5,-3.5c-1,-0.8 -2.5,-1.2 -4.5,-1.2H46.5z"/></svg>
+      Bravo Launcher
+    </a>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="https://github.com/BravoLauncher/BravoLauncher">Support on GitHub</a>
+      <a href="mailto:bravolauncher@ergton.com">Contact</a>
+    </nav>
+    <p class="foot-note">© 2026 Ergton · Bravo Launcher for Android · bravolauncher@ergton.com</p>
+    <p class="foot-note">All product names and brands mentioned are property of their respective owners and are used for identification purposes only; their use does not imply affiliation or endorsement.</p>
+  </div>
+</footer>
+
+</body>
+</html>
